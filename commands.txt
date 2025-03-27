@@ -1,0 +1,10 @@
+https://github.com/omerbsezer/Fast-Kubernetes/blob/main/K8s-CreatingPod-Imperative.md
+minikube start
+kubectl run firstpod --image=nginx --restart=Never
+kubectl get pods -o wide
+kubectl describe pods firstpod
+kubectl logs firstpod
+kubectl logs -f firstpod
+kubectl exec firstpod -- hostname
+kubectl exec -it firstpod -- bash
+kubectl delete pods firstpod
